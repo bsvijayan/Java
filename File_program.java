@@ -16,6 +16,7 @@ public class FileRead
 				str=sc.nextLine();
 				System.out.println(str);
 			}
+			fc.close();
 		}
 		catch(FileNotFoundException fe)
 		{
