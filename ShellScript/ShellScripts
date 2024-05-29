@@ -1,0 +1,35 @@
+Shell Scripting
+1.ls -lrta
+ls -lart
+-l: Provides detailed information for each file.
+-a: Includes all files, including hidden ones.
+-r: Sorts the output in reverse order.
+-t: Sorts by modification time, with the most recently modified files listed last (due to the reverse order).
+
+2.Sum of columns 2 in the numbers.txt
+$ cat numbers.txt
+NUM 1
+NUM 33
+NUM 54
+NUM 23
+NUM 66
+awk '{sum+=$2}END{print sum}' numbers.txt
+177
+ 
+3.Question No 2
+Sed /s Only the first occurrence will be replaced
+sed /g All the occurrence will be replaced
+
+4.Details of process running
+ps -ef 
+e- Every process
+f- Full formatted string
+
+5.List files
+du -h
+
+6.Finding Files Larger than a Specific Size
+ find / -type f -size +100M
+
+7.List big size files in Linux
+find / -type f -exec du -h {} + | sort -rh | head -n 10
