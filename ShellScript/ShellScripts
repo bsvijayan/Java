@@ -17,7 +17,7 @@ awk '{sum+=$2}END{print sum}' numbers.txt
 177
  
 3.Question No 2
-Sed /s Only the first occurrence will be replaced
+Sed /s Only the first occurrence in a line will be replaced
 sed /g All the occurrence will be replaced
 
 4.Details of process running
@@ -33,3 +33,6 @@ du -h
 
 7.List big size files in Linux
 find / -type f -exec du -h {} + | sort -rh | head -n 10
+8.top command
+9.netstat
+10.
